@@ -1,0 +1,6 @@
+function greeting(name){
+    alert("happy birthday "+ravi);
+}function userinput(callback){
+    var name=prompt("enter your name");
+    callback(name);
+}userinput(greeting);

@@ -1,0 +1,13 @@
+function test(value,callback)
+{
+    console.log("this is test function "+value);
+    callback();
+}
+
+test("here",function () 
+    {
+
+       console.log("fine");
+       console.log(20+40);
+    }
+);

@@ -1,0 +1,5 @@
+console.log('in one.js');
+var x=60;
+console.log(x);
+console.log(y);
+var y=90;

@@ -1,0 +1,7 @@
+function name(text,callback){
+    console.log("my name is "+text);
+    callback();
+}
+name("ravi",function(){
+    console.log(20+40);
+});
