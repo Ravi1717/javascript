@@ -1,0 +1,5 @@
+function reversenumber(n){
+    n=n.toString();
+    return n.split("").reverse().join("");
+}
+console.log(reversenumber(12345));

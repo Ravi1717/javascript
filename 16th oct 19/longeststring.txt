@@ -1,0 +1,18 @@
+var a="hi";
+var b="hellooooooo";
+var c="chandigarh"
+var na=a.length;
+var nb=b.length;
+var nc=c.length;
+if(na>nb&na>nc){
+    console.log("hi is longest");
+
+}else if(nb>na&nb>nc){
+    console.log("hellooooooooooo is longest");
+}
+else if(nc>na&nc>nb){
+    console.log("chandigarh is longest")
+}
+else{
+    console.log("no one is longest");
+}

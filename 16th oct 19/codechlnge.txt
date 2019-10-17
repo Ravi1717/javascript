@@ -1,0 +1,38 @@
+oneHeight=178;
+oneAge=40;
+secondHeight=175;
+secondAge=40;
+thirdHeight=172;
+thirdAge=40;
+
+oneScore=oneHeight+(oneAge*5);
+secondScore=secondHeight+(secondAge*5);
+thirdScore=thirdHeight+(thirdAge*5);
+
+if(oneScore>secondScore && oneScore>thirdScore)
+{
+    console.log("one is winner and his score is = "+oneScore);
+}
+else if(secondScore>thirdScore && secondScore>oneScore)
+{
+    console.log("second is winner = "+secondScore);
+}
+else if(thirdScore> oneScore && thirdScore>secondScore){
+    console.log("third is winner = " + thirdScore);
+}
+else if(oneScore==secondScore && oneScore==thirdScore){
+    console.log("match is drawn");
+}
+else if(oneScore==secondScore)
+{
+    console.log("third is the winner " + thirdScore);
+}
+else if(secondScore==thirdScore){
+    console.log("one is the winner " + oneScore);
+}
+else if(oneScore==thirdScore){
+    console.log("second is the winner " + secondScore);
+}
+else{
+console.log("match postponed");
+}

@@ -1,0 +1,4 @@
+function return_type(a){
+    return typeof(a);
+    
+}console.log(return_type(58));

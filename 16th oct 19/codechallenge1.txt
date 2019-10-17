@@ -1,0 +1,21 @@
+var heightsunil=188;
+var agesunil=30;
+var heightravi=188;
+var ageravi=30;
+var heightshakil=188;
+var ageshakil=30;
+var scoreshakil=heightshakil+5*ageshakil;
+var scoreravi=heightravi+5*ageravi;
+var scoresunil= heightsunil+5*agesunil;
+if(scoreravi>scoresunil && scoreravi>scoreshakil){
+console.log("Ravi wins "+ scoreravi);
+}
+else if(scoresunil>scoreravi&&scoresunil>scoreshakil){
+console.log("sunil wins "+ scoresunil);
+}
+else if(scoreshakil>scoreravi&&scoreshakil>scoresunil){
+    console.log("shakil wins " + scoreshakil);
+}
+else{
+console.log("There is a draw");
+}
