@@ -1,0 +1,15 @@
+var currentScope=0;
+(function(){
+    var currentScope=1,one="scope 1";
+    alert(currentScope);
+(function(){
+    var currentScope=2, two="scope 2";
+    alert(currentScope);
+    (function(){
+    var currentScope=3,three="scope 3";
+    alert(currentScope);
+    alert(one+two+three);
+    })();
+})();
+})();
+alert(currentScope);

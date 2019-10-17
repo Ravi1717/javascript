@@ -1,0 +1,5 @@
+function c(){
+    var z=80;
+    console.log(z);
+}p();
+console.log(z);

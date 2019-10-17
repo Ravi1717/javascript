@@ -1,0 +1,15 @@
+function a(){
+    var x=30;
+    function b(){
+        var y=100;
+          function c(){
+              var z=50;
+              console.log(z);
+               console.log(y);
+                console.log(x);
+          }c();
+           console.log(y);
+    }b();
+     console.log(x);
+}a();
+
