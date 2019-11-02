@@ -1,0 +1,7 @@
+function function1(x) {
+  return function(y) {
+    return x + y;
+  };
+};
+var add=function1(100);
+add(20);
