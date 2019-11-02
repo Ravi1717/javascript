@@ -1,0 +1,7 @@
+var arg1={
+    myvar:13,
+    mymethod:function(test){
+return test;
+}
+};
+arg1.mymethod("hello");

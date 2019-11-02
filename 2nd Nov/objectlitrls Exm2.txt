@@ -1,0 +1,7 @@
+var textOb={ test:[
+                     {
+                       max:[ {name:"jas",age:45,gender:"male" } ]  
+                      }  
+                   ]  
+           }
+textOb.test[0].max[0].name;

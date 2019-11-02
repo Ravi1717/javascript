@@ -1,0 +1,14 @@
+var obj={
+ name:"ravi",
+ age:30,
+ func:function(test)
+ {
+     console.log(test);
+ },
+ id:[23,45,55,"number"],
+
+}
+obj.name;
+obj.age;
+obj.func("hello");
+obj.id;

@@ -1,0 +1,9 @@
+var person={
+    name:[
+            {name:"max",age:22},
+            {name:"ravi",age:21},
+            {months:'november',year:2019}
+         ]
+};
+person.name;
+person.name[2].year;

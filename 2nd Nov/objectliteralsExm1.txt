@@ -1,0 +1,11 @@
+var person={
+    name:"ravi",
+    age:22,
+    professional:"student",
+
+}
+console.log(person)
+person.gender="male";
+person;
+delete person.age;
+person;
