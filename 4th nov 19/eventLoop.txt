@@ -1,0 +1,6 @@
+console.log("hiiii");
+setTimeout(function cb(){
+    console.log("bbyeeee");
+    },6000);
+
+console.log("hellooo")

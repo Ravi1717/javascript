@@ -1,0 +1,8 @@
+function person(name,age){
+this.name=name;
+this.age=age;
+};
+var ravi=new person("ravi",22);
+var tushar=new person("tushar",26);
+ravi.age;
+ravi.name;

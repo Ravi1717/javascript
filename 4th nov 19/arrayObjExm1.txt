@@ -1,0 +1,11 @@
+var obj=
+{
+    name:['aman','ravi','subham','harsh'],
+    func:function(test){
+        console.log("hello")
+    },
+    name:"rishabh",
+    age:"24",
+   txt(){ console.log("test")}
+}
+obj.func();

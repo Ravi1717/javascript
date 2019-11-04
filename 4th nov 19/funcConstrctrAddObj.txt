@@ -1,0 +1,9 @@
+var person={
+    firstname:"ravi",
+    lastname:"verma",
+    id:0011,
+};
+person.name=function(){
+    return this.firstname +  " "  +this.lastname;
+};
+person.name();
