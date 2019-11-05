@@ -1,0 +1,11 @@
+var car={
+    brand:"nissan",
+    getbrand:function(){
+        console.log(this.brand);
+    }
+};
+var obj1={brand:"honda",getbrand:car.getbrand};
+var obj2={brand:"tata",getbrand:car.getbrand};
+car.getbrand();
+obj1.getbrand();
+obj2.getbrand();
