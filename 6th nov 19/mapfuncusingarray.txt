@@ -1,0 +1,7 @@
+var task=[{name:'ravi', age:20},{name:'raman',age:21},{name:'rohit',age:18},];
+var test=task.map(function(currentitem,currentitemindex,fullarray)
+{
+    return currentitem.age>=20;
+  
+})
+test;

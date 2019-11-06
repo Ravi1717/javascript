@@ -1,0 +1,47 @@
+var monday = [
+        {
+            'name'     : 'Write a tutorial',
+            'duration' : 180
+        },
+        {
+            'name'     : 'Some web development',
+            'duration' : 120
+        }
+    ];
+ 
+var tuesday = [
+        {
+            'name'     : 'Keep writing that tutorial',
+            'duration' : 240
+        },
+        {
+            'name'     : 'Some more web development',
+            'duration' : 180
+        },
+        {
+            'name'     : 'A whole lot of nothing',
+            'duration'  : 240
+        }
+    ];
+     
+var tasks = [monday, tuesday];
+
+
+                    
+var result = tasks.reduce(function (accumulator, current) {   // Concatenate our 2D array into a single list   
+                    return accumulator.concat(current);
+                }).map(function (task) {        // Extract the task duration, and convert minutes to hours
+                    return (task.duration / 60);
+                }).filter(function (duration) {   // Filter out any task that took less than two hours
+                    return duration >= 2;    
+                }).map(function (duration) { // Multiply each tasks' duration by our hourly rate
+                    return duration * 25;
+                }).reduce(function (accumulator, current) {  // Combine the sums into a single dollar amount
+                    return [(+accumulator) + (+current)]; 
+                }).map(function (dollar_amount) {  // Convert to a "pretty-printed" dollar amount 
+                    return '$' + dollar_amount.toFixed(2);
+                }).reduce(function (formatted_dollar_amount) { // Pull out the only element of the array we got from map
+                    return formatted_dollar_amount;
+                });
+                result;
+                

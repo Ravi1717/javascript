@@ -1,0 +1,32 @@
+var task=[
+{
+    name:"ravi",
+    duration:120,
+},
+
+{  
+  name:"raman",
+    duration:80,
+},
+   
+{
+    name:"aman",
+    duration:150,
+},
+];
+
+var mapfunc=task.map(function(citem,citemindex,array){
+    return citem.duration>=120;
+});
+mapfunc;
+
+
+
+/*
+
+ var mapfunc = task.map((citem) => citem.name );     //    ARROW FUNCTION
+mapfunc;
+
+*/
+
+//var mapfunc = task.map((citem) => citem.name ); //ARROW FUNCTION

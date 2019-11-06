@@ -1,0 +1,33 @@
+var monday = [
+        {
+            'name'     : 'Write a tutorial',
+            'duration' : 180
+        },
+        {
+            'name'     : 'Some web development',
+            'duration' : 120
+        }
+    ];
+ 
+var tuesday = [
+        {
+            'name'     : 'Keep writing that tutorial',
+            'duration' : 240
+        },
+        {
+            'name'     : 'Some more web development',
+            'duration' : 180
+        },
+        {
+            'name'     : 'A whole lot of nothing',
+            'duration'  : 240
+        }
+    ];
+     
+var tasks = [monday, tuesday];
+
+
+                    
+var result = tasks.reduce(function (accumulator, current) {   // Concatenate our 2D array into a single list   
+                    return accumulator.concat(current);
+                });result;

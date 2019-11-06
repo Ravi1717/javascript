@@ -1,0 +1,5 @@
+var x=[75,50,100,75,,100];
+var sum=x.reduce(function(accumulator,current){
+  return accumulator+current;  
+});
+sum;

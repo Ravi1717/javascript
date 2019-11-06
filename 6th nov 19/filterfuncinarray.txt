@@ -1,0 +1,5 @@
+var id=[{name:"ravi",age:"21"},{name:"ram",age:"25"},{name:"raju",age:"30"},];
+var filterfunc=id.filter(function(cindex,citem,array){
+    return cindex.age>21;
+})
+filterfunc;

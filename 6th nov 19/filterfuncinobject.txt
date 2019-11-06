@@ -1,0 +1,22 @@
+var task=[
+{
+    name:"ravi",
+    duration:120,
+},
+
+{  
+  name:"raman",
+    duration:80,
+},
+   
+{
+    name:"aman",
+    duration:150,
+},
+];
+
+var mapfunc=task.filter(function(citem,citemindex,array){
+    return citem.duration>=120;
+});
+mapfunc;
+
