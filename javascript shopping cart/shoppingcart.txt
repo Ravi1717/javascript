@@ -1,0 +1,68 @@
+var itemstorage=[];
+ 
+function item(name,count){
+    this.name=name;
+    this.count=count;
+};
+
+var product1=new item("colgate",10);
+var product2=new item("brush",50);
+var product3=new item("soap",30);
+var product4=new item("shampoo",30);
+
+itemstorage.push(product1);
+itemstorage.push(product2);
+itemstorage.push(product3);
+itemstorage.push(product4);
+
+console.log(itemstorage);
+
+/*function additemtocart(name,count){
+    for(var i=0;i<=itemstorage[i].length;i++){
+        if(itemstorage[i].name==name){
+            itemstorage[i].count +=count;
+            return;
+        }
+    }
+    var newitem=new item(name,count);
+    itemstorage.push(newitem);
+}
+
+
+additemtocart("apple",55);
+additemtocart("guava",59);
+//console.log(itemstorage);
+
+*/
+/*
+ function removeItemFromCart(name){
+            for(var i=0;i<=itemstorage.length;i++){
+                if(itemstorage[i].name ===name){
+                   itemstorage[i].count --;
+                    if(itemstorage[i].count === 0){
+                        itemstorage.splice(i,1);
+                    }
+                    return;
+                }
+            }
+        
+    }
+*/
+
+function removeItemFromCartAll(name){
+            for(i in itemstorage){
+                if(itemstorage[i].name === name){
+                        itemstorage.splice(i,1);
+                }
+            }
+    }
+    function clear(){
+        itemstorage = [];
+    }
+    
+//removeItemFromCart("brush");
+//console.log(itemstorage);
+//removeItemFromCartAll("brush");
+//console.log(itemstorage);
+clear();
+console.log(itemstorage);
