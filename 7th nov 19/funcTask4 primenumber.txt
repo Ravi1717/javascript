@@ -1,0 +1,12 @@
+function showPrimes(n) {
+  for (var i = 2; i < n; i++) {
+    if (!isPrime(i)) continue;
+    alert(i);  // a prime
+  }
+}
+function isPrime(num) {
+  for(var i = 2; i < num; i++)
+    if(num % i === 0) return false;
+  return true;
+}
+showPrimes(8);

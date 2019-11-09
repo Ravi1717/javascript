@@ -1,0 +1,9 @@
+function kebabToSnake(str){
+
+var mystr=str.replace(/_/g,"-");
+return console.log(mystr);
+
+};
+kebabToSnake("hello_world");
+kebabToSnake("hbhdsb_udkhgdsvb-ejen-hdsbv_");
+kebabToSnake("253_hgdbvhfvkfvb_hbsbvh-gjvfvhfb_bhabhvbvhvb-ghsfbs_jbsvj_jhbl_jsdb");
