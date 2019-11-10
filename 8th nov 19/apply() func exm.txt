@@ -1,0 +1,13 @@
+var car={
+    name:"city",
+    brand:"honda",
+}
+var bike={
+    name:"zest",
+    brand:"tata",
+}
+function displaydetails(number){
+    console.log(number +" this is car details: " + this.name + " " + this.brand)
+};
+displaydetails.apply(car,["wb001"]);
+displaydetails.apply(bike,["pb 0011"]);

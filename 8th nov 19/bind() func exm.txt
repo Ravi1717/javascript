@@ -1,0 +1,17 @@
+var car={
+    number:"WB01R",
+    brand:55,
+
+    displaydetails:function(){
+        console.log(this.number + " " + this.brand);
+    }
+}
+//var myCarDetails =car.displaydetails;
+//myCarDetails;                                   //
+
+//var myCarDetails=car.displaydetails;
+//myCarDetails();                          //“this” will be now assigned to the global context which doesn’t have neither the registrationNumber nor the brand property.
+
+
+var myCarDetails=car.displaydetails.bind(car);
+myCarDetails();                                          ///HERE BIND FUNCTION WORKS

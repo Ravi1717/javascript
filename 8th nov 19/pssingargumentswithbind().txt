@@ -1,0 +1,11 @@
+var car={
+    name:"city",
+    brand:"honda",
+
+    cardetails:function(number){          /////  Example of passing arguments with bind():
+        console.log( number + " this is car the number and detail is : " + this.brand + " " +this.name); 
+
+}
+};
+var mycar=car.cardetails.bind(car,2022);
+mycar();
