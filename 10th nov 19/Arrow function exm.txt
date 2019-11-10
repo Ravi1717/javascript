@@ -1,0 +1,34 @@
+/*myfunc=function(){
+
+}
+
+*/
+
+/*
+const myFuncti = (a,b,c) => 
+console.log(a+b+c);
+
+myFuncti(10,20,50);
+*/
+
+/*
+const myfunvv=(a,b)=>console.log(a+b);         // function body contains just a single statement, you can omit the brackets
+myfunvv(2,3);
+*/
+
+/* 
+ hello=b=>console.log(b);         ///single parameter (so not using parenthesis)
+hello(5);
+*/
+
+
+/*
+const myfff=()=>'hello world';                     ///it works when there is a one-line statement in the function body
+myfff();                             ///implicit return
+*/
+  
+
+/*
+ const myfunctons=()=>({name:"ravi"});  
+ myfunctons();
+ */                                        /// when returning an object we use like this

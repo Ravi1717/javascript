@@ -1,0 +1,12 @@
+const smartphone=[
+{ name:'iphone', price:649},
+{ name:'Galaxy S6', price:576},
+{ name:'Galaxy Note 5', price:489}];
+
+/*var pric=smartPhone.map(function(citem,cindex,array)
+{
+    return citem.price;
+});
+console.log(pric);*/
+var pricee=smartphone.map(citem=>citem.price);
+console.log(pricee);
