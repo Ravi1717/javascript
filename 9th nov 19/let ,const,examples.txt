@@ -1,0 +1,25 @@
+/*
+{
+    var a=10;
+    console.log(a);
+}
+{
+    a++;                         ////VAR VALID FOR FUNCTION SCOPE ONLY
+
+    console.log(a);                          //// VAR IF DECLARE IN BLOCK SCOPE IT USE AS A GLOBAL
+}
+
+*/
+
+/*
+{
+ let c=10;
+ console.log(c);
+} //block 1                  //LET ONLY VALID FOR BLOCK SCOPED;
+  {
+  c++;
+
+  console.log(c);
+} ;
+
+*/

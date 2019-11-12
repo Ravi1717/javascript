@@ -1,0 +1,71 @@
+/*
+var arr1=[1,2,3,4,5,6];
+console.log(arr1);
+var arr2=[...arr1];
+console.log(arr2);
+*/
+
+/*
+var arr1=[5,6,7,];
+var arr2=[1,2,3,4,...arr1,8,9,10];
+
+console.log(arr2);
+*/
+
+const obj = {
+    name: 'AppDividend',
+    author: 'Krunal Lathiya'
+};
+const combined = {
+    ...obj,
+    age: 25
+};
+console.log(combined);
+*/
+/*
+function multiplication(x,y,z){
+    return x*y*z;
+}
+
+var a=[1,2,3];
+var b=multiplication(...a);
+console.log(b);
+*/
+
+
+
+
+
+/*
+var arr1=['a','b','c'];
+var arr2=arr1;                ///IT DOESN'T COPY THE ARR TO ARR2,IT ASSIGN IN ARR2,SO WAHTEVER CHANGES MADE WILL REFLECT IN ARR ???WITHOUT USING SPREAD OPERATOR
+//console.log(arr2);              
+arr2.push('d');
+console.log(arr2);
+console.log(arr1);
+*/
+
+/*
+var arr1=['a','b','c'];
+var arr2=[...arr1];                             
+arr2.push('d');                      /////USING SPREAD OPERATOR,IT WILL NOT REFLECT IN ARR1
+console.log(arr2);
+console.log(arr1);
+*/
+
+/*
+var arr1=[1,2,3,4,5];
+var arr2=[6,7,8,9,10];                     //concat
+var arr=[...arr1,...arr2];
+console.log(arr);
+*/
+/*
+var arr = [2, 4, 8, 6, 0];
+var max = Math.max(...arr);
+console.log(max);
+*/
+/*
+var str = 'lenovo';
+var chars = [...str];
+console.log(chars); 
+*/

@@ -1,0 +1,63 @@
+/*
+function showname(firstname,lastname,...titles){
+    alert(firstname +' '+ lastname);
+
+alert(titles[0]);
+alert(titles[1]);
+};
+showname("ravi","verma","sharma","agarwal");
+*/
+/*
+function showName(){
+    alert(arguments.length);
+    alert(arguments[0]);
+    alert(arguments[1]);
+}
+showName("ravi","ram");
+showName("rahul","raja","ramesh");
+*/
+/*
+function sum(...args){
+  return args.filter((citem,cindex,array)=>{
+return citem >=4;
+})
+}sum(12,3,2,4);
+*/
+/*
+function show(...agrs){
+    var nrmlarry=agrs;
+    var uns=nrmlarry.unshift();
+console.log(uns);
+}show(1,2,3,4,5,5)
+*/
+/*
+function chr(a,b,...arg){
+    console.log(a);
+    console.log(b);
+    console.log("ravi",arg);
+}chr("kirti","sweety",1,2,3,4,5,"hek");
+*/
+/*
+function multiply(multiplier,...args){
+    return args.map(function(element){
+        return multiplier*element;
+    });
+};
+multiply(10,2,3,4,5);
+*/
+/*
+function reverse(...arr){
+    var sorting=arr.sort();
+    console.log(sorting);                  ////ARRAY IS SORT BUT ARGUMENTS IS NOT
+
+};
+(reverse(4,6,3,2,4,2));
+*/
+/*
+function reverse(){
+    var arr=Array.from(arguments);                ///////OBJECT SORTED BUT FIRST YOU HAVE TO CONVERT INTO ARRAY
+    var sorted=arr.sort();
+    console.log(sorted);
+};
+*/
+(reverse(4,6,9,0,2,1));
