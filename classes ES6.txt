@@ -1,0 +1,57 @@
+/*  
+
+/////ES5
+
+var person5=function(name,dob,job){
+    this.name=name;
+    this.dob=dob;
+    this.job=job;
+};
+person5.prototype.calculateage=function(){
+     var age = new Date().getFullYear() - this.dob;
+    console.log(age);
+};
+var athelete=function(name,dob,job,olympicgames,medals){
+    person5.call(this,name,dob,job);
+    this.olympicgames=olympicgames;
+    this.medals=medals;
+};
+athelete.prototype=Object.create(person5.prototype);
+athelete.prototype.wonMedal = function() {
+    this.medals++;
+    console.log(this.medals);
+}
+var john=new athelete('ravi',1995,3,5,10);
+john.calculateage();
+john.wonMedal();
+*/
+
+
+/*    ///ES6
+
+class Person {
+    constructor (name, yearOfBirth, job) {
+        this.name = name;
+        this.yearOfBirth = yearOfBirth;
+        this.job = job;
+    }
+    calculateAge() {
+        var age = new Date().getFullYear() - this.yearOfBirth;
+        console.log(age);
+    }
+}
+class Athlete extends Person{
+    constructor(name, yearOfBirth, job, olympicGames, medals) {
+        super(name, yearOfBirth, job);
+        this.olympicGames = olympicGames;
+        this.medals = medals;
+    }
+    wonMedal() {
+        this.medals++;
+        console.log(this.medals);
+    }
+}
+const johnAthlete = new Athlete('John', 1990, 'swimmer', 3, 10);
+johnAthlete.wonMedal();
+johnAthlete.calculateAge();
+*/
