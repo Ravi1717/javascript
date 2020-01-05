@@ -15,6 +15,7 @@ function reversename(person){
 var s=makePerson('ravi','verma');
 console.log(reversename(s));
 */
+/*
 function makePerson(first,last){
     return{
         first:first,
@@ -28,4 +29,19 @@ function makePerson(first,last){
     };
 };
 var s=makePerson('ravi', 'verma');
-console.log (s.Fullnamereverse());
+console.log(s.Fullname());
+*/
+
+function person(first,last){
+    this.first=first;
+    this.last=last;
+}
+person.prototype.fullname=function(){
+    return this.first + " " + this.last;
+}
+person.prototype.namereverse=function(){
+    return this.last + " " + this.first;
+};
+var n1=new person('ravi','verma');
+console.log(n1.fullname());
+
