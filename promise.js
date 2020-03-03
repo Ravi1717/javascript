@@ -13,35 +13,45 @@ p.then(message => {
 });
 */
 
-// const userLeft = false;
-// const userWatchingCatMeme = false;
+/*
+    
+    ///CALLBACK EXAMPLE
 
-// function watchTutorialCallback(callback, errorCallback) {
-//   if (userLeft) {
-//     errorCallback({
-//       name: "User Left",
-//       message: ":("
-//     });
-//   } else if (userWatchingCatMeme) {
-//     errorCallback({
-//       name: "User watching Cat Meme",
-//       message: "webdev simplified < cat"
-//     });
-//   } else {
-//     callback({
-//       message: "Thumbs up and subscribe"
-//     });
-//   }
-// }
-// watchTutorialCallback(
-//   success => {
-//     console.log(success.message);
-//   },
-//   error => {
-//     console.log(error.name + "    " + error.message);
-//   }
-// );
+ const userLeft = false;
+ const userWatchingCatMeme = false;
 
+ function watchTutorialCallback(callback, errorCallback) {
+   if (userLeft) {
+     errorCallback({
+       name: "User Left",
+       message: ":("
+     });
+   } else if (userWatchingCatMeme) {
+     errorCallback({
+       name: "User watching Cat Meme",
+       message: "webdev simplified < cat"
+     });
+   } else {
+     callback({
+       message: "Thumbs up and subscribe"
+     });
+   }
+ }
+ watchTutorialCallback(
+   success => {
+     console.log(success.message);
+   },
+   error => {
+     console.log(error.name + "    " + error.message);
+   }
+ );
+ */
+ 
+
+/*
+
+//Promise
+ 
 const userLeft = false;
 const userWatchingCatMeme = false;
 
@@ -72,3 +82,27 @@ watchTutorialPromise()
   .catch(error => {
     console.log(error.name + "    " + error.message);
   });
+*/
+
+/*
+     ///Promise ALL
+const recordVideoOne = new Promise((resolve, reject) => {
+  resolve("Video 1 Recorded");
+});
+
+const recordVideoTwo = new Promise((resolve, reject) => {
+  resolve("Video 2 Recorded");
+});
+
+const recordVideoThree = new Promise((resolve, reject) => {
+  resolve("Video 3 Recorded");
+});
+
+Promise.all([recordVideoOne, recordVideoTwo, recordVideoThree]).then(
+  message => {
+    console.log(message);
+  }
+);
+*/
+
+
